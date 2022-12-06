@@ -19,7 +19,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
+textarea {
+  resize: none;
+}
 /* ----------Загальні класи---------- */
 .container {
   width: 1200px;
@@ -481,6 +483,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -501,6 +504,40 @@ img {
   margin-top: 8px;
   margin-right: 8px;
   cursor: pointer;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #212121;
+}
+.form-field:not(:last-child) {
+  margin-bottom: 12px;
+}
+.form {
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field label {
+  margin-bottom: 4px;
+}
+.form-field input {
+  margin: 0;
+  padding: 0;
+}
+.form-field input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 /*----------- Футер----------- */
 .footer {
