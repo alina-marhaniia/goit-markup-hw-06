@@ -147,6 +147,10 @@ img {
 .contacts .item + .item {
   margin-left: 50px;
 }
+.header-icon {
+  display: flex;
+  align-items: center;
+}
 /* ----------Site nav---------- */
 
 .site-nav {
@@ -477,7 +481,7 @@ img {
   pointer-events: none;
 }
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -504,6 +508,7 @@ img {
   margin-top: 8px;
   margin-right: 8px;
   cursor: pointer;
+  top: 0;
 }
 .modal-title {
   font-weight: 700;
@@ -539,6 +544,27 @@ img {
 
   color: rgba(117, 117, 117, 0.5);
 }
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.comment {
+  padding: 12px 16px;
+}
+.button.submit-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 52px;
+}
+
 /*----------- Футер----------- */
 .footer {
   background-color: var(--dark-background-color);
@@ -584,6 +610,38 @@ img {
 }
 .foot-main {
   display: flex;
+}
+
+.subscribe {
+  margin-top: 72px;
+  margin-left: 93px;
+}
+.footer-form {
+  margin-top: 20px;
+  display: flex;
+}
+.foot-form {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-form-input {
+  background-color: #2f303a;
+  border: none;
+}
+.button.subscribe-button {
+  min-width: 200px;
+  margin-left: 12px;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 /* --Приєднуйся-- */
 .footer-join {
