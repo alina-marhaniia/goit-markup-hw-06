@@ -633,6 +633,10 @@ img {
   border: none;
 }
 .button.subscribe-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
   min-width: 200px;
   margin-left: 12px;
   background-color: var(--accent-color);
@@ -642,6 +646,14 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+.subscribe-button::after {
+  content: '';
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  background-image: url(../images/send.svg);
+  background-size: contain;
 }
 /* --Приєднуйся-- */
 .footer-join {
