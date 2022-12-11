@@ -654,7 +654,6 @@ img {
 /*----------- Футер----------- */
 .footer {
   background-color: var(--dark-background-color);
-  /* padding-top: 60px; */
   padding-bottom: 60px;
 }
 .foot-main {
@@ -732,7 +731,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .footer-button {
